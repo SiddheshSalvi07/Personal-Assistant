@@ -11,7 +11,7 @@ $(document).ready(function () {
     //Display Main Ui
     eel.expose(ShowUi)
     function ShowUi(){
-        $( "#oval").attr("hidden",false);
+        $("#oval").attr("hidden",false);
         $("#SiriWave").attr("hidden", false);
     }
 });

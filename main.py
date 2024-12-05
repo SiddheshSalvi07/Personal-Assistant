@@ -7,10 +7,10 @@ from engine.features import *
 from engine.command import *
 
 
-eel.init("frontend")
+eel.init("frontend")  
 
 playAssistantSound() 
 
 #os.system('start msedge.exe --app="http://localhost:5500/frontend/index.html"')
 
-eel.start("index.html",  size=(1000, 800))
+eel.start("index.html",  size=(1000, 1000))
