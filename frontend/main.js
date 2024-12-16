@@ -47,5 +47,15 @@ $(document).ready(function () {
         
     });
 
+    function doc_keyUp(e) {
+        if (e.key === 's' && e.altKey) {  
+            console.log("Alt+S detected!");
+            eel.playAssistantSound() 
+            $("#oval").attr("hidden", true);
+            $("#SiriWave").attr("hidden", false);
+            eel.AllCommands()()
+        }
+    }
+    document.addEventListener('keyup', doc_keyUp, false);
     
 });
