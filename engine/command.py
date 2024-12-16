@@ -51,9 +51,15 @@ def takecommand():
     return query.lower()
 
 @eel.expose
-def AllCommands():
+def AllCommands(message=1):
+
+    if message == 1:
+        query = takecommand()
+        print(query)
+    else:
+        query=message
     try:
-        query=takecommand()
+        
         if "hello" in query:
             Speak("Hello Sir, How can I help you?")
         elif "open" in query:
